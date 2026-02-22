@@ -5,7 +5,7 @@ describe("totalIntegers", () => {
     expect(totalIntegers([1, 2, 3])).toBe(3);
   });
 
-  test.skip("Ignores non-number values", () => {
+  test("Ignores non-number values", () => {
     expect(totalIntegers([1, 2, "3", 4])).toBe(3);
   });
 
@@ -17,7 +17,7 @@ describe("totalIntegers", () => {
     expect(totalIntegers([[], [], []])).toBe(0);
   });
 
-  test.skip("Counts integers in deeply nested arrays", () => {
+  test("Counts integers in deeply nested arrays", () => {
     expect(totalIntegers([[[[[[[[[[[[[[4]]]]]], 246]]]]]]]])).toBe(2);
   });
 

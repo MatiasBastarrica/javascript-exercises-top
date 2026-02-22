@@ -6,9 +6,13 @@ const totalIntegers = function (deep) {
   const nestedObjects = values.filter((value) => {
     return typeof value === "object" && value !== null;
   });
-  nestedObjects.forEach((obj) => integerCount + totalIntegers(obj));
+  nestedObjects.forEach((obj) => {
+    integerCount += totalIntegers(obj);
+  });
   return integerCount;
 };
+
+totalIntegers([[[[[[[[[[[[[[4]]]]]], 246]]]]]]]]);
 
 // Do not edit below this line
 module.exports = totalIntegers;
