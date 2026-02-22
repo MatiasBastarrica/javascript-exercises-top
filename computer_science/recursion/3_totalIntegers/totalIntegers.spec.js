@@ -74,7 +74,7 @@ describe("totalIntegers", () => {
     ).toBe(5);
   });
 
-  test.skip("Counts all integers when nested arrays and objects are mixed together", () => {
+  test("Counts all integers when nested arrays and objects are mixed together", () => {
     expect(totalIntegers([4, 6, { a: 1, b: { a: [5, 10], b: 11 } }, 9])).toBe(
       7,
     );
