@@ -1,4 +1,7 @@
 const totalIntegers = function (deep) {
+  if (typeof deep !== "object" || deep == null) {
+    return undefined;
+  }
   let integerCount = 0;
   const values = Object.values(deep);
   const integerValues = values.filter((value) => Number.isInteger(value));
