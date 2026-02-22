@@ -15,7 +15,5 @@ const totalIntegers = function (deep) {
   return integerCount;
 };
 
-totalIntegers([[[[[[[[[[[[[[4]]]]]], 246]]]]]]]]);
-
 // Do not edit below this line
 module.exports = totalIntegers;
