@@ -21,7 +21,7 @@ describe("totalIntegers", () => {
     expect(totalIntegers([[[[[[[[[[[[[[4]]]]]], 246]]]]]]]])).toBe(2);
   });
 
-  test.skip("Counts negative integers", () => {
+  test("Counts negative integers", () => {
     expect(
       totalIntegers([
         5,
@@ -34,7 +34,7 @@ describe("totalIntegers", () => {
     ).toBe(14);
   });
 
-  test.skip("Does not count non-integer numbers", () => {
+  test("Does not count non-integer numbers", () => {
     expect(
       totalIntegers([
         5,
