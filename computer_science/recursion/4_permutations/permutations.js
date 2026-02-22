@@ -7,19 +7,19 @@ const permutations = function (array) {
 
   let numToAdd = array[array.length - 1];
 
-  let prevPartitions;
-  prevPartitions = partitions(array.toSpliced(array.length - 1, 1));
+  let prevPermutations;
+  prevPermutations = permutations(array.toSpliced(numToAdd - 1, 1));
 
-  let partitions = [];
+  let permutationsArr = [];
 
-  prevPartitions.forEach((partition) => {
+  prevPermutations.forEach((partition) => {
     for (let i = 0; i < numToAdd; i++) {
-      partitions.push(partition.splice(i, 0, numToAdd));
+      let newPartition = partition.toSpliced(i, 0, numToAdd);
+      permutationsArr.push(newPartition);
     }
   });
 
-  return partitions;
+  return permutationsArr;
 };
-
 // Do not edit below this line
 module.exports = permutations;

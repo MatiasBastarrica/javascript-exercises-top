@@ -9,7 +9,7 @@ describe("permutations", () => {
     expect(permutations([1])).toEqual([[1]]);
   });
 
-  test.skip("2 possible permutations for a set containing 2 numbers", () => {
+  test("2 possible permutations for a set containing 2 numbers", () => {
     expect(permutations([1, 2]).sort()).toEqual(
       [
         [1, 2],
@@ -18,7 +18,7 @@ describe("permutations", () => {
     );
   });
 
-  test.skip("6 possible permutations for a set containing 3 numbers", () => {
+  test("6 possible permutations for a set containing 3 numbers", () => {
     expect(permutations([1, 2, 3]).sort()).toEqual(
       [
         [1, 2, 3],
