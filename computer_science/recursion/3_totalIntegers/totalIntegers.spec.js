@@ -58,7 +58,7 @@ describe("totalIntegers", () => {
     expect(totalIntegers([5, NaN, [NaN, NaN, 64], 4])).toBe(3);
   });
 
-  test.skip("Counts all integers even with deeply nested containing multiple types", () => {
+  test("Counts all integers even with deeply nested containing multiple types", () => {
     expect(
       totalIntegers([
         NaN,
