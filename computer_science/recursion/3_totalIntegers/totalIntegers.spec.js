@@ -13,7 +13,7 @@ describe("totalIntegers", () => {
     expect(totalIntegers({ a: 1, b: "2", c: 3 })).toBe(2);
   });
 
-  test.skip("Does not find any integers in nested empty arrays", () => {
+  test("Does not find any integers in nested empty arrays", () => {
     expect(totalIntegers([[], [], []])).toBe(0);
   });
 
