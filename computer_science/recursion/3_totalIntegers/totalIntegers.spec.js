@@ -54,7 +54,7 @@ describe("totalIntegers", () => {
     expect(totalIntegers(NaN)).toBe(undefined);
   });
 
-  test.skip("Does not count NaN as an integer", () => {
+  test("Does not count NaN as an integer", () => {
     expect(totalIntegers([5, NaN, [NaN, NaN, 64], 4])).toBe(3);
   });
 
