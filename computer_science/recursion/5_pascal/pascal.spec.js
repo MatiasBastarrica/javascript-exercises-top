@@ -13,7 +13,7 @@ describe("pascal", () => {
     expect(pascal(3)).toEqual([1, 2, 1]);
   });
 
-  test.skip("Gets the fourth row of pascal", () => {
+  test("Gets the fourth row of pascal", () => {
     expect(pascal(4)).toEqual([1, 3, 3, 1]);
   });
 
